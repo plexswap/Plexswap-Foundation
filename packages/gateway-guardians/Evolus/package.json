@@ -1,0 +1,5 @@
+{
+  "main": "../dist/Evolus.js",
+  "module": "../dist/Evolus.mjs",
+  "types": "../dist/Evolus/index.d.ts"
+}

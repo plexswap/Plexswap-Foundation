@@ -1,0 +1,13 @@
+{
+  "extends": "@plexswap/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "*": ["./*"],
+      "@plexswap/ui-plex": ["../../packages/ui-plex/src/index.ts"],
+      "@plexswap/ui-plex/*": ["../../packages/ui-plex/src/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+}

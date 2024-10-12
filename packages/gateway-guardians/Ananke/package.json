@@ -1,0 +1,5 @@
+{
+  "main": "../dist/Ananke.js",
+  "module": "../dist/Ananke.mjs",
+  "types": "../dist/Ananke/index.d.ts"
+}

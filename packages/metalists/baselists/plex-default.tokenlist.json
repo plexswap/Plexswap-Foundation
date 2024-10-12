@@ -1,0 +1,166 @@
+{
+  "name": "Plexswap Default List",
+  "timestamp": "2022-01-26T11:45:09Z",
+  "version": {
+    "major": 4,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},   
+  "logoURI": "https://metalists.plexfinance.us/images/common/logo.png",
+  "keywords": ["plex", "default"],
+  "tokens": [
+    {
+      "name": "WBNB Token",
+      "symbol": "WBNB",
+      "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/wbnb.png"
+    },
+    {
+      "name": "BUSD Token",
+      "symbol": "BUSD",
+      "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/busd.png"
+    },
+    {
+      "name": "Ethereum Token",
+      "symbol": "ETH",
+      "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/eth.png"
+    },
+    {
+      "name": "BTCB Token",
+      "symbol": "BTCB",
+      "address": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/btcb.png"
+    },
+    {
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "address": "0x55d398326f99059fF775485246999027B3197955",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/usdt.png"
+    },
+    {
+      "name": "PlexSwap Farm Token",
+      "symbol": "WAYA",
+      "address": "0x32d9F70F6eF86718A51021ad269522Abf4CFFE49",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/waya.png"
+    },
+    {
+      "name": "Symplexia Finance Token",
+      "symbol": "PLEX-F",
+      "address": "0xBB472510B1896C6992D658a7Ab69F7dF32a37b3c",
+      "chainId": 56,
+      "decimals": 9,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/plex.png"
+    },
+    {
+      "name": "PlexSwap Farm Token",
+      "symbol": "WAYA",
+      "address": "0xA2af2640A694f91632e60befc7Fc30C1b787D505",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/waya.png"
+    },
+    {
+      "name": "BUSD Token",
+      "symbol": "BUSD",
+      "address": "0x8516Fc284AEEaa0374E66037BD2309349FF728eA",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/busd.png"
+    },
+    {
+      "name": "WBNB Token",
+      "symbol": "WBNB",
+      "address": "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/wbnb.png"
+    },
+    {
+      "name": "Symplexia Finance Token",
+      "symbol": "PLEX-F",
+      "address": "0xb7a3DFd16663dbA80c8f93338d1c59bA21680921",
+      "chainId": 97,
+      "decimals": 9,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/plex.png"
+    },
+    {
+      "name": "PlexSwap Farm Token",
+      "symbol": "WAYA",
+      "address": "0x2b82d6d89F5786C6A0fFab86b5F7F0532d5F19e4",
+      "chainId": 5,
+      "decimals": 18,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/waya.png"
+    },
+    {
+      "name": "Wrapped Ether",
+      "address": "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6",
+      "symbol": "WETH",
+      "decimals": 18,
+      "chainId": 5,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/weth.png"
+    },
+    {
+      "name": "BUSD Token",
+      "symbol": "BUSD",
+      "address": "0xb809b9B2dc5e93CB863176Ea2D565425B03c0540",
+      "chainId": 5,
+      "decimals": 18,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/busd.png"
+    },
+    {
+      "name": "Symplexia Finance Token",
+      "symbol": "PLEX-F",
+      "address": "0x6a69b32d60B862F99068Be5F7c304691e58B6F3f",
+      "chainId": 5,
+      "decimals": 9,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/plex.png"
+    },
+    {
+      "name": "PlexSwap Farm Token",
+      "symbol": "WAYA",
+      "address": "0x7589CF3115E060673FD0109fA6891464E13947A1",
+      "chainId": 1149,
+      "decimals": 18,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/waya.png"
+    },
+    {
+      "name": "Symplexia USD Coin",
+      "address": "0x69D1D347088e8916aC107b6679927C4EC5faB4a0",
+      "symbol": "USDP",
+      "decimals": 18,
+      "chainId": 1149,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/usdp.png"
+    },
+    {
+      "name": "Wrapped PLEX",
+      "address": "0x50245424Afc53E67Ca1AAD2C90401568C0eFf53A",
+      "symbol": "WPLEX",
+      "decimals": 18,
+      "chainId": 1149,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/wplex.png"
+    },
+    {
+      "name": "Symplexia Finance Token",
+      "symbol": "PLEX-F",
+      "address": "0xD0B07197d86434635fe30D69604751F3651c19a6",
+      "chainId": 1149,
+      "decimals": 9,
+      "logoURI": "https://metalists.plexfinance.us/images/symbol/plex.png"
+    }
+  ]
+}

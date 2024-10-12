@@ -1,0 +1,15 @@
+{
+  "extends": "@plexswap/tsconfig/base",
+  "include": ["./src"],
+  "exclude": ["**/*.test.ts", "./dist/**"],
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "target": "es2020",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
+  }
+}

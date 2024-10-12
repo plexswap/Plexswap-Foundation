@@ -1,0 +1,5 @@
+{
+  "main": "../dist/Valorus.js",
+  "module": "../dist/Valorus.mjs",
+  "types": "../dist/Valorus/index.d.ts"
+}

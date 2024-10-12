@@ -1,0 +1,38 @@
+{
+  "name": "@plexswap/farms",
+  "version": "3.1.5",
+  "sideEffects": false,
+  "description": "Plexswap Farms Package",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "npx tsx scripts/build.ts",
+    "test": "vitest --run",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "publish": "pnpm publish --access public"
+  },
+  "author": "Symplexia Labs",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/lodash": "^4.14.168",
+    "tsx": "^4.6.1",
+    "wrangler": "2.20.2"
+  },
+  "dependencies": {
+    "@plexswap/chains": "workspace:*",
+    "@plexswap/metalists": "workspace:*",
+    "@plexswap/multicall": "workspace:*",
+    "@plexswap/sdk-core": "workspace:*",
+    "@plexswap/sdk-extended": "workspace:*",
+    "@plexswap/trade-sentinels": "workspace:*",
+    "@plexswap/tokens": "workspace:*",
+    "@plexswap/utils": "workspace:*",
+    "bignumber.js": "^9.0.0",
+    "dayjs": "^1.11.10",
+    "lodash": "^4.17.21",
+    "viem": "2.13.3"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}

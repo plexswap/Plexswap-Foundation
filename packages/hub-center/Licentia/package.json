@@ -1,0 +1,5 @@
+{
+  "main": "../dist/Licentia.js",
+  "module": "../dist/Licentia.mjs",
+  "types": "../dist/Licentia/index.d.ts"
+}

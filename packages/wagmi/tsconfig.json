@@ -1,0 +1,6 @@
+{
+  "extends": "@plexswap/tsconfig/react-library.json",
+  "compilerOptions": {
+    "target": "ES2015"
+  }
+}

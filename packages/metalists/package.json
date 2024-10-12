@@ -1,0 +1,68 @@
+{
+  "name": "@plexswap/metalists",
+  "version": "3.1.5",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest --run",
+    "prepublishOnly": "pnpm run build",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "publish": "pnpm publish --access public"
+  },
+  "dependencies": {
+    "@plexswap/sdk-core": "workspace:*",
+    "@plexswap/chains": "workspace:*",
+    "ajv": "^6.12.3",
+    "lodash": "^4.17.21"
+  },
+  "peerDependencies": {
+    "@reduxjs/toolkit": "^1.9.1",
+    "jotai": "^2.4.3",
+    "localforage": "^1.10.0",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@plexswap/utils": "workspace:*",
+    "@reduxjs/toolkit": "^1.9.1",
+    "@types/react": "^18.2.21",
+    "jotai": "^2.4.3",
+    "localforage": "^1.10.0",
+    "react": "^18.2.0",
+    "tsup": "^6.7.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.mjs",
+      "require": "./dist/react.js"
+    }
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "@reduxjs/toolkit": {
+      "optional": true
+    },
+    "localforage": {
+      "optional": true
+    },
+    "jotai": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}

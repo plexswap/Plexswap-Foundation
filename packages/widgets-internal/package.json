@@ -1,0 +1,53 @@
+{
+  "name": "@plexswap/widgets-internal",
+  "version": "3.1.5",
+  "private": false,
+  "main": "index.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./index.ts",
+    "./roi": "./roi/index.ts"
+  },
+  "dependencies": {
+    "@plexswap/chains": "workspace:*",
+    "@plexswap/farms": "workspace:*",
+    "@plexswap/hooks": "workspace:*",
+    "@plexswap/localization": "workspace:*",
+    "@plexswap/pools": "workspace:*",
+    "@plexswap/sdk-core": "workspace:*",
+    "@plexswap/sdk-extended": "workspace:*",
+    "@plexswap/tokens": "workspace:*",
+    "@plexswap/ui-plex": "workspace:*",
+    "@plexswap/utils": "workspace:*",
+    "@plexswap/style": "workspace:*",
+    "bignumber.js": "^9.0.0",
+    "clsx": "^1.2.1",
+    "d3": "^7.8.2",
+    "dayjs": "^1.11.10",
+    "lodash": "^4.17.21",
+    "viem": "2.13.3"
+  },
+  "peerDependencies": {
+    "@sentry/nextjs": "^7.0.0",
+    "next": "14.2.3",
+    "react": "^18.2.0",
+    "styled-components": "6.0.7",
+    "styled-system": "^5.1.5"
+  },
+  "devDependencies": {
+    "@sentry/nextjs": "^7.0.0",
+    "@types/lodash": "^4.14.168",
+    "@types/react": "^18.2.21",
+    "@types/styled-system": "^5.1.17",
+    "csstype": "^3.1.2",
+    "next": "14.2.3",
+    "polished": "^4.2.2",
+    "react": "^18.2.0",
+    "styled-components": "6.0.7",
+    "@types/d3": "^7.4.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}

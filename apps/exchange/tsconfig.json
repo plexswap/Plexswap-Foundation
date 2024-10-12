@@ -1,0 +1,20 @@
+{
+  "extends": "@plexswap/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": true,
+    "downlevelIteration": true,
+    "sourceMap": true,
+    "target": "ES2020",
+    "types": ["vitest/globals"],
+    "paths": {
+      "*": ["./src/*"],
+      "@plexswap/ui-plex": ["../../packages/ui-plex/src/index.ts"],
+      "@plexswap/ui-plex/*": ["../../packages/ui-plex/src/*"]
+    }
+  },
+  "exclude": ["**/node_modules", "**/.*/", "**/config/abi/types/", "**/abis/types/*.ts"],
+  "include": ["next-env.d.ts", "./src/**/*.ts", "./src/**/*.tsx"]
+}

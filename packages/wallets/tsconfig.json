@@ -1,0 +1,10 @@
+{
+  "extends": "@plexswap/tsconfig/react-library",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@plexswap/ui-plex": ["../../packages/ui-plex/src/index.ts"],
+      "@plexswap/ui-plex/*": ["../../packages/ui-plex/src/*"]
+    }
+  }
+}

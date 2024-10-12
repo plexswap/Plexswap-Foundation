@@ -1,0 +1,35 @@
+{
+  "name": "bridge",
+  "version": "1.0.2",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@plexswap/sdk-core": "workspace:*",
+    "@plexswap/ui-plex": "workspace:*",
+    "@plexswap/style": "workspace:*",
+    "@vanilla-extract/next-plugin": "^2.3.0",
+    "next": "14.2.3",
+    "next-themes": "^0.2.1",
+    "next-axiom": "^0.16.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "6.0.7",
+    "viem": "2.13.3"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "13.0.7",
+    "@plexswap/tsconfig": "workspace:*",
+    "@types/node": "18.0.4",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.0.6",
+    "typescript": "5.2.2",
+    "eslint": "^8.32.0"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "@plexswap/multicall",
+  "version": "3.1.5",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest --run",
+    "coverage": "vitest run --coverage",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "publish": "pnpm publish --access public"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "dependencies": {
+    "@plexswap/sdk-core": "workspace:*",
+    "@plexswap/chains": "workspace:*",
+    "viem": "2.13.3"
+  },
+  "devDependencies": {
+    "@plexswap/tsconfig": "workspace:*",
+    "@plexswap/utils": "workspace:*",
+    "tsup": "^6.7.0"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}

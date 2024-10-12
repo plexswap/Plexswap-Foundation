@@ -1,0 +1,16 @@
+import { ChainId } from '@plexswap/chains'
+import { Address } from 'viem'
+
+// = 1 << 23 or 100000000000000000000000
+export const ANANKE_FEE_PATH_PLACEHOLDER = 8388608
+
+export const MSG_SENDER = '0x0000000000000000000000000000000000000001'
+export const ADDRESS_THIS = '0x0000000000000000000000000000000000000002'
+
+// LOOKUP //
+
+export const EXTENDED_TICK_LENS_ADDRESSES = {
+  [ChainId.PLEXCHAIN]: '0x0',
+  [ChainId.BSC]: '0x1D662272A308A68e5FC743bE9ab87aB1D2788b7D',
+  [ChainId.BSC_TESTNET]: '0xe5C2e341BE9E23E2972848d8F6547d4b4aF6dA28',
+} as const satisfies Record<ChainId, Address>

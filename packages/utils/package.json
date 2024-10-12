@@ -1,0 +1,39 @@
+{
+  "name": "@plexswap/utils",
+  "version": "3.1.5",
+  "scripts": {
+    "test": "vitest --run --globals",
+    "publish": "pnpm publish --access public"
+  },
+  "peerDependencies": {
+    "@plexswap/localization": "workspace:*",
+    "dayjs": "^1.11.10",
+    "lodash": "^4.17.21",
+    "styled-components": "^6.0.7",
+    "viem": "2.13.3"
+  },
+  "devDependencies": {
+    "@plexswap/sdk-core": "workspace:*",
+    "@types/lodash": "^4.14.168",
+    "bignumber.js": "^9.0.0",
+    "jotai": "^2.4.3",
+    "styled-components": "6.0.7",
+    "viem": "2.13.3"
+  },
+  "peerDependenciesMeta": {
+    "@plexswap/localization": {
+      "optional": true
+    },
+    "viem": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@plexswap/chains": "workspace:*",
+    "url-parse": "^1.5.10"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}

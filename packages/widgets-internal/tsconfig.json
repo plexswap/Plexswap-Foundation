@@ -1,0 +1,12 @@
+{
+  "extends": "@plexswap/tsconfig/react-library",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "target": "ES2020",
+    "baseUrl": "./",
+    "paths": {
+      "@plexswap/ui-plex": ["../../packages/ui-plex/src/index.ts"],
+      "@plexswap/ui-plex/*": ["../../packages/ui-plex/src/*"]
+    }
+  }
+}

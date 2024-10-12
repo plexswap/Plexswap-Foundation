@@ -1,0 +1,5 @@
+{
+  "main": "../dist/Khaos.js",
+  "module": "../dist/Khaos.mjs",
+  "types": "../dist/Khaos/index.d.ts"
+}

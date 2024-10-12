@@ -1,0 +1,12 @@
+{
+  "name": "@plexswap/tsconfig",
+  "version": "3.1.5",
+  "main": "index.js",
+  "scripts": {
+    "publish": "pnpm publish --access public"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}

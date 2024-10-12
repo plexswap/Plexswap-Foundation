@@ -1,0 +1,5 @@
+{
+  "main": "../dist/Aether.js",
+  "module": "../dist/Aether.mjs",
+  "types": "../dist/Aether/index.d.ts"
+}

@@ -1,0 +1,5 @@
+{
+  "main": "../dist/Hermes.js",
+  "module": "../dist/Hermes.mjs",
+  "types": "../dist/Hermes/index.d.ts"
+}

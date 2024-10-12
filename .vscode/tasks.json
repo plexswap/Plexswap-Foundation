@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build-exchange",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "pnpm: next info && next build --debug",
+			"detail": "turbo run build --filter=exchange..."
+		}
+	]
+}

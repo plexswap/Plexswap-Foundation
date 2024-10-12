@@ -1,0 +1,5 @@
+{
+  "main": "../dist/Aegis.js",
+  "module": "../dist/Aegis.mjs",
+  "types": "../dist/Aegis/index.d.ts"
+}

@@ -1,0 +1,73 @@
+{
+  "name": "@plexswap/hub-center",
+  "version": "3.1.5",
+  "description": "🛠 An SDK for building applications on top of Plexswap.",
+  "main": "dist/base.js",
+  "module": "dist/base.mjs",
+  "types": "dist/base/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/base/index.d.ts",
+      "import": "./dist/base.mjs",
+      "require": "./dist/base.js"
+    },
+    "./base": {
+      "types": "./dist/base/index.d.ts",
+      "import": "./dist/base.mjs",
+      "require": "./dist/base.js"
+    },
+    "./Aegis": {
+      "types": "./dist/Aegis/index.d.ts",
+      "import": "./dist/Aegis.mjs",
+      "require": "./dist/Aegis.js"
+    },
+    "./Licentia": {
+      "types": "./dist/Licentia/index.d.ts",
+      "import": "./dist/Licentia.mjs",
+      "require": "./dist/Licentia.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/plexswap/plexswap-frontend.git",
+    "directory": "packages/hub-center"
+  },
+  "keywords": [
+    "plexswap"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "coverage": "vitest run --coverage",
+    "test": "vitest --run",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "format:check": "prettier --check --loglevel error \"{src,test}/**/*.{js,jsx,ts,tsx,json}\"",
+    "format:write": "prettier --write \"{src,test}/**/*.{js,jsx,ts,tsx,json}\"",
+    "lint": "eslint '{src,test}/**/*.{js,jsx,ts,json}'",
+    "publish": "pnpm publish --access public"
+  },
+  "devDependencies": {
+    "@plexswap/tokens": "workspace:*",
+    "@types/node": "^15.12.2",
+    "tslib": "^2.3.0",
+    "tsup": "^6.7.0"
+  },
+  "dependencies": {
+    "@plexswap/chains": "workspace:*",
+    "@plexswap/sdk-core": "workspace:*",
+    "@plexswap/sdk-extended": "workspace:*",
+    "@plexswap/metalists": "workspace:*",
+    "abitype": "^0.9.8",
+    "tiny-invariant": "^1.1.0",
+    "dayjs": "^1.11.10",
+    "viem": "2.13.3"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}
