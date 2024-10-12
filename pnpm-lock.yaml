@@ -85,212 +85,6 @@ importers:
         specifier: 2.20.2
         version: 2.20.2
 
-  apis/farms:
-    dependencies:
-      '@plexswap/chains':
-        specifier: workspace:*
-        version: link:../../packages/chains
-      '@plexswap/farms':
-        specifier: workspace:*
-        version: link:../../packages/farms
-      '@plexswap/sdk-core':
-        specifier: workspace:*
-        version: link:../../packages/sdk-core
-      '@plexswap/sdk-extended':
-        specifier: workspace:*
-        version: link:../../packages/sdk-extended
-      '@plexswap/tokens':
-        specifier: workspace:*
-        version: link:../../packages/tokens
-      '@plexswap/worker-utils':
-        specifier: workspace:*
-        version: link:../../packages/worker-utils
-      bignumber.js:
-        specifier: ^9.0.0
-        version: 9.1.2
-      dayjs:
-        specifier: ^1.11.10
-        version: 1.11.10
-      graphql-request:
-        specifier: 5.0.0
-        version: 5.0.0(graphql@16.8.1)
-      itty-router:
-        specifier: ^2.6.1
-        version: 2.6.6
-      itty-router-extras:
-        specifier: ^0.4.2
-        version: 0.4.6
-      lodash:
-        specifier: ^4.17.21
-        version: 4.17.21
-      viem:
-        specifier: 2.13.3
-        version: 2.13.3(typescript@5.2.2)(zod@3.22.4)
-      zod:
-        specifier: ^3.22.3
-        version: 3.22.4
-    devDependencies:
-      '@cloudflare/workers-types':
-        specifier: ^3.10.0
-        version: 3.19.0
-      '@plexswap/tsconfig':
-        specifier: workspace:*
-        version: link:../../packages/tsconfig
-      '@types/itty-router-extras':
-        specifier: ^0.4.0
-        version: 0.4.3
-      '@types/lodash':
-        specifier: ^4.14.168
-        version: 4.14.202
-      wrangler:
-        specifier: 3.78.11
-        version: 3.78.11(@cloudflare/workers-types@3.19.0)
-
-  apis/pools:
-    dependencies:
-      '@plexswap/chains':
-        specifier: workspace:*
-        version: link:../../packages/chains
-      '@plexswap/farms':
-        specifier: workspace:*
-        version: link:../../packages/farms
-      '@plexswap/gateway-guardians':
-        specifier: workspace:*
-        version: link:../../packages/gateway-guardians
-      '@plexswap/sdk-core':
-        specifier: workspace:*
-        version: link:../../packages/sdk-core
-      '@plexswap/sdk-extended':
-        specifier: workspace:*
-        version: link:../../packages/sdk-extended
-      '@plexswap/worker-utils':
-        specifier: workspace:*
-        version: link:../../packages/worker-utils
-      dayjs:
-        specifier: ^1.11.10
-        version: 1.11.10
-      graphql-request:
-        specifier: 5.0.0
-        version: 5.0.0(graphql@16.8.1)
-      itty-router:
-        specifier: ^2.6.1
-        version: 2.6.6
-      itty-router-extras:
-        specifier: ^0.4.2
-        version: 0.4.6
-      viem:
-        specifier: 2.13.3
-        version: 2.13.3(typescript@5.2.2)(zod@3.22.4)
-    devDependencies:
-      '@cloudflare/workers-types':
-        specifier: ^3.10.0
-        version: 3.19.0
-      '@plexswap/tsconfig':
-        specifier: workspace:*
-        version: link:../../packages/tsconfig
-      '@types/itty-router-extras':
-        specifier: ^0.4.0
-        version: 0.4.3
-      wrangler:
-        specifier: 3.78.11
-        version: 3.78.11(@cloudflare/workers-types@3.19.0)
-
-  apis/prices:
-    dependencies:
-      '@plexswap/chains':
-        specifier: workspace:*
-        version: link:../../packages/chains
-      '@plexswap/tokens':
-        specifier: workspace:*
-        version: link:../../packages/tokens
-      '@plexswap/worker-utils':
-        specifier: workspace:*
-        version: link:../../packages/worker-utils
-      axios:
-        specifier: ^1.4.0
-        version: 1.6.2
-      itty-router:
-        specifier: ^2.6.1
-        version: 2.6.6
-      itty-router-extras:
-        specifier: ^0.4.2
-        version: 0.4.6
-    devDependencies:
-      '@cloudflare/workers-types':
-        specifier: ^3.10.0
-        version: 3.19.0
-      '@plexswap/tsconfig':
-        specifier: workspace:*
-        version: link:../../packages/tsconfig
-      '@types/itty-router-extras':
-        specifier: ^0.4.0
-        version: 0.4.3
-      '@types/node':
-        specifier: ^15.12.2
-        version: 15.12.2
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
-      wrangler:
-        specifier: 3.78.11
-        version: 3.78.11(@cloudflare/workers-types@3.19.0)
-
-  apis/proxy-worker:
-    dependencies:
-      itty-router:
-        specifier: ^2.6.1
-        version: 2.6.6
-      itty-router-extras:
-        specifier: ^0.4.2
-        version: 0.4.6
-    devDependencies:
-      '@cloudflare/workers-types':
-        specifier: ^3.10.0
-        version: 3.19.0
-      '@plexswap/tsconfig':
-        specifier: workspace:*
-        version: link:../../packages/tsconfig
-      '@plexswap/worker-utils':
-        specifier: workspace:*
-        version: link:../../packages/worker-utils
-      '@types/itty-router-extras':
-        specifier: ^0.4.0
-        version: 0.4.3
-      wrangler:
-        specifier: 3.78.11
-        version: 3.78.11(@cloudflare/workers-types@3.19.0)
-
-  apis/token-risks:
-    dependencies:
-      '@plexswap/worker-utils':
-        specifier: workspace:*
-        version: link:../../packages/worker-utils
-      itty-router:
-        specifier: ^2.6.1
-        version: 2.6.6
-      itty-router-extras:
-        specifier: ^0.4.2
-        version: 0.4.6
-    devDependencies:
-      '@cloudflare/workers-types':
-        specifier: ^3.10.0
-        version: 3.19.0
-      '@plexswap/tsconfig':
-        specifier: workspace:*
-        version: link:../../packages/tsconfig
-      '@types/itty-router-extras':
-        specifier: ^0.4.0
-        version: 0.4.3
-      '@types/node':
-        specifier: ^15.12.2
-        version: 15.12.2
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
-      wrangler:
-        specifier: 3.78.11
-        version: 3.78.11(@cloudflare/workers-types@3.19.0)
-
   apps/bridge:
     dependencies:
       '@material-ui/core':
@@ -3538,70 +3332,6 @@ packages:
       mime: 3.0.0
     dev: true
 
-  /@cloudflare/kv-asset-handler@0.3.4:
-    resolution: {integrity: sha512-YLPHc8yASwjNkmcDMQMY35yiWjoKAKnhUbPRszBRS0YgH+IXtsMp61j+yTcnCE3oO2DgP0U3iejLC8FTtKDC8Q==}
-    engines: {node: '>=16.13'}
-    dependencies:
-      mime: 3.0.0
-    dev: true
-
-  /@cloudflare/workerd-darwin-64@1.20240925.0:
-    resolution: {integrity: sha512-KdLnSXuzB65CbqZPm+qYzk+zkQ1tUNPaaRGYVd/jPYAxwwtfTUQdQ+ahDPwVVs2tmQELKy7ZjQjf2apqSWUfjw==}
-    engines: {node: '>=16'}
-    cpu: [x64]
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@cloudflare/workerd-darwin-arm64@1.20240925.0:
-    resolution: {integrity: sha512-MiQ6uUmCXjsXgWNV+Ock2tp2/tYqNJGzjuaH6jFioeRF+//mz7Tv7J7EczOL4zq+TH8QFOh0/PUsLyazIWVGng==}
-    engines: {node: '>=16'}
-    cpu: [arm64]
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@cloudflare/workerd-linux-64@1.20240925.0:
-    resolution: {integrity: sha512-Rjix8jsJMfsInmq3Hm3fmiRQ+rwzuWRPV1pg/OWhMSfNP7Qp2RCU+RGkhgeR9Z5eNAje0Sn2BMrFq4RvF9/yRA==}
-    engines: {node: '>=16'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@cloudflare/workerd-linux-arm64@1.20240925.0:
-    resolution: {integrity: sha512-VYIPeMHQRtbwQoIjUwS/zULlywPxyDvo46XkTpIW5MScEChfqHvAYviQ7TzYGx6Q+gmZmN+DUB2KOMx+MEpCxA==}
-    engines: {node: '>=16'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@cloudflare/workerd-windows-64@1.20240925.0:
-    resolution: {integrity: sha512-C8peGvaU5R51bIySi1VbyfRgwNSSRknqoFSnSbSBI3uTN3THTB3UnmRKy7GXJDmyjgXuT9Pcs1IgaWNubLtNtw==}
-    engines: {node: '>=16'}
-    cpu: [x64]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@cloudflare/workers-shared@0.5.4:
-    resolution: {integrity: sha512-PNL/0TjKRdUHa1kwgVdqUNJVZ9ez4kacsi8omz+gv859EvJmsVuGiMAClY2YfJnC9LVKhKCcjqmFgKNXG9/IXA==}
-    engines: {node: '>=16.7.0'}
-    dependencies:
-      mime: 3.0.0
-      zod: 3.22.4
-    dev: true
-
-  /@cloudflare/workers-types@3.19.0:
-    resolution: {integrity: sha512-0FRcsz7Ea3jT+gc5gKPIYciykm1bbAaTpygdzpCwGt0RL+V83zWnYN30NWDW4rIHj/FHtz+MIuBKS61C8l7AzQ==}
-    dev: true
-
   /@coinbase/wallet-sdk@3.9.3:
     resolution: {integrity: sha512-N/A2DRIf0Y3PHc1XAMvbBUu4zisna6qAdqABMZwBMNEfWrXpAwx16pZGkYCLGE+Rvv1edbcB2LYDRnACNcmCiw==}
     dependencies:
@@ -3639,6 +3369,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
+    dev: false
 
   /@csstools/selector-specificity@2.2.0(postcss-selector-parser@6.0.13):
     resolution: {integrity: sha512-+OJ9konv95ClSTOJCmMZqpd5+YGsB2S+x6w3E1oaM8UuR5j8nTNHYSz8c9BEPGDOCMQYIEEGlVPj/VY64iTbGw==}
@@ -3782,30 +3513,12 @@ packages:
       esbuild: 0.16.3
     dev: true
 
-  /@esbuild-plugins/node-globals-polyfill@0.2.3(esbuild@0.17.19):
-    resolution: {integrity: sha512-r3MIryXDeXDOZh7ih1l/yE9ZLORCd5e8vWg02azWRGj5SPTuoh69A2AIyn0Z31V/kHBfZ4HgWJ+OK3GTTwLmnw==}
-    peerDependencies:
-      esbuild: '*'
-    dependencies:
-      esbuild: 0.17.19
-    dev: true
-
   /@esbuild-plugins/node-modules-polyfill@0.1.4(esbuild@0.16.3):
     resolution: {integrity: sha512-uZbcXi0zbmKC/050p3gJnne5Qdzw8vkXIv+c2BW0Lsc1ji1SkrxbKPUy5Efr0blbTu1SL8w4eyfpnSdPg3G0Qg==}
     peerDependencies:
       esbuild: '*'
     dependencies:
       esbuild: 0.16.3
-      escape-string-regexp: 4.0.0
-      rollup-plugin-node-polyfills: 0.2.1
-    dev: true
-
-  /@esbuild-plugins/node-modules-polyfill@0.2.2(esbuild@0.17.19):
-    resolution: {integrity: sha512-LXV7QsWJxRuMYvKbiznh+U1ilIop3g2TeKRzUxOG5X3YITc8JyyTa90BmLwqqv0YnX4v32CSlG+vsziZp9dMvA==}
-    peerDependencies:
-      esbuild: '*'
-    dependencies:
-      esbuild: 0.17.19
       escape-string-regexp: 4.0.0
       rollup-plugin-node-polyfills: 0.2.1
     dev: true
@@ -5134,11 +4847,6 @@ packages:
     resolution: {integrity: sha512-cEee/Z+I12mZcFJshKcCqC8tuX5hG3s+d+9nZ3LabqKF1vKdF41B92pJVCBggjAGORAeOzyyDDKrZwIkLffeOQ==}
     dev: true
 
-  /@fastify/busboy@2.1.1:
-    resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
-    engines: {node: '>=14'}
-    dev: true
-
   /@floating-ui/core@1.6.0:
     resolution: {integrity: sha512-PcF++MykgmTj3CIyOQbKA/hDzOAiqI3mhuoN44WRCopIs1sgoDoU4oty4Jtqaj/y3oDU6fnVSm4QG0a3t5i0+g==}
     dependencies:
@@ -5425,6 +5133,7 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
+    dev: false
 
   /@json-rpc-tools/provider@1.7.6:
     resolution: {integrity: sha512-z7D3xvJ33UfCGv77n40lbzOYjZKVM3k2+5cV7xS8G6SCvKTzMkhkUYuD/qzQUNT4cG/lv0e9mRToweEEVLVVmA==}
@@ -9676,12 +9385,6 @@ packages:
     dependencies:
       '@types/istanbul-lib-report': 3.0.3
 
-  /@types/itty-router-extras@0.4.3:
-    resolution: {integrity: sha512-mBLJnci8IQRqWCURrBW45XVtXtwuTig0DWKBZQlLB36yOZoxkNDf8pSsHW/gOFqyqtO21zcSfgTjrA6/bKJwEA==}
-    dependencies:
-      itty-router: 2.6.6
-    dev: true
-
   /@types/jest@26.0.24:
     resolution: {integrity: sha512-E/X5Vib8BWqZNRlDxj9vYXhsDwPYbPINqKF9BsnSoon4RQ0D9moEuLD8txgyypFLH7J4+Lho9Nr/c8H0Fi+17w==}
     dependencies:
@@ -12247,12 +11950,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /as-table@1.0.55:
-    resolution: {integrity: sha512-xvsWESUJn0JN421Xb9MQw6AsMHRCUknCe0Wjlxvjud80mU4E6hQf1A6NzQKcYNmYw62MfzEtXc+badstZP3JpQ==}
-    dependencies:
-      printable-characters: 1.0.42
-    dev: true
-
   /asap@2.0.6:
     resolution: {integrity: sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA==}
     requiresBuild: true
@@ -12868,15 +12565,6 @@ packages:
   /caniuse-lite@1.0.30001608:
     resolution: {integrity: sha512-cjUJTQkk9fQlJR2s4HMuPMvTiRggl0rAVMtthQuyOlDWuqHXqN8azLq+pi8B2TjwKJ32diHjUqRIKeFX4z1FoA==}
 
-  /capnp-ts@0.7.0:
-    resolution: {integrity: sha512-XKxXAC3HVPv7r674zP0VC3RTXz+/JKhfyw94ljvF80yynK6VkTnqE3jMuN8b3dUVmmc43TjyxjW4KTsmB3c86g==}
-    dependencies:
-      debug: 4.3.4(supports-color@9.4.0)
-      tslib: 2.6.2
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /ccount@1.1.0:
     resolution: {integrity: sha512-vlNK021QdI7PNeiUh/lKkC/mNHHfV0m/Ad5JoI0TYtlBnJAslM/JIkm/tGC88bkLIwO6OQ5uV6ztS6kVAtCDlg==}
 
@@ -13327,11 +13015,6 @@ packages:
 
   /cookie@0.5.0:
     resolution: {integrity: sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==}
-    engines: {node: '>= 0.6'}
-    dev: true
-
-  /cookie@0.7.2:
-    resolution: {integrity: sha512-yki5XnKuf750l50uGTllt6kKILY4nQ1eNIQatoXEByZ5dWgnKqbnqmTrBE5B4N7lrMJKQ2ytWMiTO2o0v6Ew/w==}
     engines: {node: '>= 0.6'}
     dev: true
 
@@ -13837,10 +13520,6 @@ packages:
   /damerau-levenshtein@1.0.8:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
     dev: false
-
-  /data-uri-to-buffer@2.0.2:
-    resolution: {integrity: sha512-ND9qDTLc6diwj+Xe5cdAgVTbLVdXbtxTJRXRhli8Mowuaan+0EJOtdqJ0QCHNSSPyoXGx9HX2/VMnKeC34AChA==}
-    dev: true
 
   /date-fns@2.30.0:
     resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
@@ -15194,11 +14873,6 @@ packages:
       strip-final-newline: 3.0.0
     dev: true
 
-  /exit-hook@2.2.1:
-    resolution: {integrity: sha512-eNTPlAD67BmP31LDINZ3U7HSF8l57TxOY2PmBJ1shpCvpnxBF93mWCE8YHBnXs8qiUZJc9WDcWIeC3a2HIAMfw==}
-    engines: {node: '>=6'}
-    dev: true
-
   /express@4.18.2:
     resolution: {integrity: sha512-5/PsL6iGPdfQ/lKM1UuielYgv3BUoJfz1aUwU9vHZ+J7gyvwdQXFEBIEIaxeGf0GIcreATNyBExtalisDbuMqQ==}
     engines: {node: '>= 0.10.0'}
@@ -15681,13 +15355,6 @@ packages:
   /get-port@5.1.1:
     resolution: {integrity: sha512-g/Q1aTSDOxFpchXC4i8ZWvxA1lnPqx/JHqcpIw0/LX9T8x/GBbi6YnlN5nhaKIFkT8oFsscUKgDJYxfwfS6QsQ==}
     engines: {node: '>=8'}
-    dev: true
-
-  /get-source@2.0.12:
-    resolution: {integrity: sha512-X5+4+iD+HoSeEED+uwrQ07BOQr0kEDFMVqqpBuI+RaZBpBpHCuXxo70bjar6f0b0u/DQJsJ7ssurpP0V60Az+w==}
-    dependencies:
-      data-uri-to-buffer: 2.0.2
-      source-map: 0.6.1
     dev: true
 
   /get-stream@3.0.0:
@@ -16731,13 +16398,6 @@ packages:
       reflect.getprototypeof: 1.0.4
       set-function-name: 2.0.1
     dev: false
-
-  /itty-router-extras@0.4.6:
-    resolution: {integrity: sha512-6r7HQBkFMPSJfcKksrKC7avEQnPCSSEvoz6PAAZMNhz8hthYu1pzedXDrvTFDWXJosfuaittzoNciWHO/TxMaw==}
-    dev: false
-
-  /itty-router@2.6.6:
-    resolution: {integrity: sha512-hIPHtXGymCX7Lzb2I4G6JgZFE4QEEQwst9GORK7sMYUpJvLfy4yZJr95r04e8DzoAnj6HcxM2m4TbK+juu+18g==}
 
   /jackspeak@2.3.6:
     resolution: {integrity: sha512-N3yCS/NegsOBokc8GAdM8UcmfsKiSS8cipheD/nivzr700H+nsMOxJjQnvwOcRYVuFkdH0wGUvW2WbXGmrZGbQ==}
@@ -18218,29 +17878,6 @@ packages:
       - utf-8-validate
     dev: true
 
-  /miniflare@3.20240925.0:
-    resolution: {integrity: sha512-2LmQbKHf0n6ertUKhT+Iltixi53giqDH7P71+wCir3OnGyXIODqYwOECx1mSDNhYThpxM2dav8UdPn6SQiMoXw==}
-    engines: {node: '>=16.13'}
-    hasBin: true
-    dependencies:
-      '@cspotcode/source-map-support': 0.8.1
-      acorn: 8.11.2
-      acorn-walk: 8.3.2
-      capnp-ts: 0.7.0
-      exit-hook: 2.2.1
-      glob-to-regexp: 0.4.1
-      stoppable: 1.1.0
-      undici: 5.28.4
-      workerd: 1.20240925.0
-      ws: 8.18.0
-      youch: 3.3.4
-      zod: 3.22.4
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
-    dev: true
-
   /minimalistic-assert@1.0.1:
     resolution: {integrity: sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A==}
 
@@ -18779,10 +18416,6 @@ packages:
       node-fetch-native: 1.4.1
       ufo: 1.5.4
 
-  /ohash@1.1.4:
-    resolution: {integrity: sha512-FlDryZAahJmEF3VR3w1KogSEdWX3WhA5GPakFx4J81kEAiHyLMpdLLElS8n8dfNadMgAne/MywcvmogzscVt4g==}
-    dev: true
-
   /on-exit-leak-free@0.2.0:
     resolution: {integrity: sha512-dqaz3u44QbRXQooZLTUKU41ZrzYrcvLISVgbrzbyCMxpmSLJvZ3ZamIJIZ29P6OhZIkNIQKosdeM6t1LYbA9hg==}
 
@@ -19119,10 +18752,6 @@ packages:
 
   /path-to-regexp@6.2.1:
     resolution: {integrity: sha512-JLyh7xT1kizaEvcaXOQwOc2/Yhw6KZOvPf1S8401UyLk86CU79LN3vl7ztXGm/pZ+YjoyAJ4rxmHwbkBXJX+yw==}
-    dev: true
-
-  /path-to-regexp@6.3.0:
-    resolution: {integrity: sha512-Yhpw4T9C6hPpgPeA28us07OJeqZ5EzQTkbfwuhsUg0c237RomFoETJgmp2sa3F/41gfLE6G5cqcYwznmeEeOlQ==}
     dev: true
 
   /path-type@4.0.0:
@@ -19484,10 +19113,6 @@ packages:
   /pretty-hrtime@1.0.3:
     resolution: {integrity: sha512-66hKPCr+72mlfiSjlEB1+45IjXSqvVAIy6mocupoww4tBFE9R9IhwwUGoI4G++Tc9Aq+2rxOt0RFU6gPcrte0A==}
     engines: {node: '>= 0.8'}
-    dev: true
-
-  /printable-characters@1.0.42:
-    resolution: {integrity: sha512-dKp+C4iXWK4vVYZmYSd0KBH5F/h1HoZRsbJ82AVKRO3PEo8L4lBS/vLwhVtpwwuYcoIsVY+1JYKR268yn480uQ==}
     dev: true
 
   /process-es6@0.11.6:
@@ -20604,11 +20229,6 @@ packages:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
     dev: true
 
-  /resolve.exports@2.0.2:
-    resolution: {integrity: sha512-X2UW6Nw3n/aMgDVy+0rSqgHlv39WZAlZrXCdnbyEiKm17DSqHX4MmQMaST3FbeWR5FTuRcUwYAziZajji0Y7mg==}
-    engines: {node: '>=10'}
-    dev: true
-
   /resolve@1.19.0:
     resolution: {integrity: sha512-rArEXAgsBG4UgRGcynxWIWKFvh/XZCcS8UJdHhwy91zwAvCZIbcs+vAbflgBnNjYMs/i/i+/Ux6IZhML1yPvxg==}
     dependencies:
@@ -21308,13 +20928,6 @@ packages:
     dependencies:
       type-fest: 0.7.1
 
-  /stacktracey@2.1.8:
-    resolution: {integrity: sha512-Kpij9riA+UNg7TnphqjH7/CzctQ/owJGNbFkfEeve4Z4uxT5+JapVLFXcsurIfN34gnTWZNJ/f7NMG0E8JDzTw==}
-    dependencies:
-      as-table: 1.0.55
-      get-source: 2.0.12
-    dev: true
-
   /standard-as-callback@2.1.0:
     resolution: {integrity: sha512-qoRRSyROncaz1z0mvYqIE4lCd9p2R90i6GxW3uZv5ucSu8tU7B5HXUP1gG8pVZsYNVaXjk8ClXHPttLyxAL48A==}
 
@@ -21359,11 +20972,6 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       internal-slot: 1.0.6
-    dev: true
-
-  /stoppable@1.1.0:
-    resolution: {integrity: sha512-KXDYZ9dszj6bzvnEMRYvxgeTHU74QBFL54XKtP3nyMuJ81CFYtABZ3bAzL2EdFUaEwJOBOgENyFj3R7oTzDyyw==}
-    engines: {node: '>=4', npm: '>=6'}
     dev: true
 
   /store2@2.14.2:
@@ -22484,22 +22092,6 @@ packages:
       busboy: 1.6.0
     dev: true
 
-  /undici@5.28.4:
-    resolution: {integrity: sha512-72RFADWFqKmUb2hmmvNODKL3p9hcB6Gt2DOQMis1SEBaV6a4MH8soBvzg+95CYhCKPFedut2JY9bMfrDl9D23g==}
-    engines: {node: '>=14.0'}
-    dependencies:
-      '@fastify/busboy': 2.1.1
-    dev: true
-
-  /unenv-nightly@2.0.0-20240919-125358-9a64854:
-    resolution: {integrity: sha512-XjsgUTrTHR7iw+k/SRTNjh6EQgwpC9voygnoCJo5kh4hKqsSDHUW84MhL9EsHTNfLctvVBHaSw8e2k3R2fKXsQ==}
-    dependencies:
-      defu: 6.1.4
-      ohash: 1.1.4
-      pathe: 1.1.2
-      ufo: 1.5.4
-    dev: true
-
   /unenv@1.7.4:
     resolution: {integrity: sha512-fjYsXYi30It0YCQYqLOcT6fHfMXsBr2hw9XC7ycf8rTG7Xxpe3ZssiqUnD0khrjiZEmkBXWLwm42yCSCH46fMw==}
     dependencies:
@@ -23606,19 +23198,6 @@ packages:
     resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==}
     dev: true
 
-  /workerd@1.20240925.0:
-    resolution: {integrity: sha512-/Jj6+yLwfieZGEt3Kx4+5MoufuC3g/8iFaIh4MPBNGJOGYmdSKXvgCqz09m2+tVCYnysRfbq2zcbVxJRBfOCqQ==}
-    engines: {node: '>=16'}
-    hasBin: true
-    requiresBuild: true
-    optionalDependencies:
-      '@cloudflare/workerd-darwin-64': 1.20240925.0
-      '@cloudflare/workerd-darwin-arm64': 1.20240925.0
-      '@cloudflare/workerd-linux-64': 1.20240925.0
-      '@cloudflare/workerd-linux-arm64': 1.20240925.0
-      '@cloudflare/workerd-windows-64': 1.20240925.0
-    dev: true
-
   /wrangler@2.20.2:
     resolution: {integrity: sha512-ZWydYGuKbHC8PdKLk7JAdRYMK78mHVnmaFsLRf2ZpnmVl2nQl9lKIXKKGVUdmezj70FvLhJCD/2LsGOPGg2AFg==}
     engines: {node: '>=16.13.0'}
@@ -23646,42 +23225,6 @@ packages:
       - bufferutil
       - cron-schedule
       - ioredis
-      - utf-8-validate
-    dev: true
-
-  /wrangler@3.78.11(@cloudflare/workers-types@3.19.0):
-    resolution: {integrity: sha512-+dWXHgq2DVad03gETiT09cCp+sr7IFcnEquR4gesVdkC4/6E51qHcSC7zAG6S26JMZe+fCaUujhBXQnkWI/Q1g==}
-    engines: {node: '>=16.17.0'}
-    hasBin: true
-    peerDependencies:
-      '@cloudflare/workers-types': ^4.20240925.0
-    peerDependenciesMeta:
-      '@cloudflare/workers-types':
-        optional: true
-    dependencies:
-      '@cloudflare/kv-asset-handler': 0.3.4
-      '@cloudflare/workers-shared': 0.5.4
-      '@cloudflare/workers-types': 3.19.0
-      '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
-      '@esbuild-plugins/node-modules-polyfill': 0.2.2(esbuild@0.17.19)
-      blake3-wasm: 2.1.5
-      chokidar: 3.5.3
-      esbuild: 0.17.19
-      miniflare: 3.20240925.0
-      nanoid: 3.3.7
-      path-to-regexp: 6.3.0
-      resolve: 1.22.8
-      resolve.exports: 2.0.2
-      selfsigned: 2.4.1
-      source-map: 0.6.1
-      unenv: /unenv-nightly@2.0.0-20240919-125358-9a64854
-      workerd: 1.20240925.0
-      xxhash-wasm: 1.0.2
-    optionalDependencies:
-      fsevents: 2.3.3
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
       - utf-8-validate
     dev: true
 
@@ -23967,14 +23510,6 @@ packages:
       cookie: 0.4.2
       mustache: 4.2.0
       stack-trace: 0.0.10
-    dev: true
-
-  /youch@3.3.4:
-    resolution: {integrity: sha512-UeVBXie8cA35DS6+nBkls68xaBBXCye0CNznrhszZjTbRVnJKQuNsyLKBTTL4ln1o1rh2PKtv35twV7irj5SEg==}
-    dependencies:
-      cookie: 0.7.2
-      mustache: 4.2.0
-      stacktracey: 2.1.8
     dev: true
 
   /z-schema@5.0.5:
