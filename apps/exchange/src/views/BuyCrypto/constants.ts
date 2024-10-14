@@ -1,6 +1,6 @@
 import { Native } from '@plexswap/sdk-core'
 import type { Currency } from '@plexswap/sdk-core'
-import {   bscTokens } from '@plexswap/tokens'
+import { bscTokens } from '@plexswap/tokens'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import { Field } from 'state/buyCrypto/actions'
 import { OnRampUnit } from './types'
@@ -18,6 +18,7 @@ export enum ONRAMP_PROVIDERS {
   MoonPay = 'MoonPay',
   Mercuryo = 'Mercuryo',
   Transak = 'Transak',
+  Topper = 'Topper',
 }
 
 export enum FeeTypes {
@@ -26,7 +27,7 @@ export enum FeeTypes {
   ProviderRate = 'Rate',
 }
 
-const MOONPAY_FEE_TYPES = [FeeTypes.NetworkingFees, FeeTypes.ProviderFees, FeeTypes.ProviderRate]
+const DEFAULT_FEE_TYPES = [FeeTypes.NetworkingFees, FeeTypes.ProviderFees, FeeTypes.ProviderRate]
 const MERCURYO_FEE_TYPES = [FeeTypes.ProviderFees, FeeTypes.ProviderRate]
 
 export const getIsNetworkEnabled = (network: OnRampChainId | undefined) => {
@@ -39,12 +40,14 @@ export const PROVIDER_ICONS = {
   [ONRAMP_PROVIDERS.MoonPay]: `${ASSET_CDN}/images/on-ramp-providers/moonpay.svg`,
   [ONRAMP_PROVIDERS.Mercuryo]: `${ASSET_CDN}/images/on-ramp-providers/mercuryo.svg`,
   [ONRAMP_PROVIDERS.Transak]: `${ASSET_CDN}/images/on-ramp-providers/transak.svg`,
+  [ONRAMP_PROVIDERS.Topper]: `${ASSET_CDN}/images/on-ramp-providers/topper.png`,
 } satisfies Record<keyof typeof ONRAMP_PROVIDERS, string>
 
 export const providerFeeTypes: { [provider in ONRAMP_PROVIDERS]: FeeTypes[] } = {
-  [ONRAMP_PROVIDERS.MoonPay]: MOONPAY_FEE_TYPES,
+  [ONRAMP_PROVIDERS.MoonPay]: DEFAULT_FEE_TYPES,
   [ONRAMP_PROVIDERS.Mercuryo]: MERCURYO_FEE_TYPES,
-  [ONRAMP_PROVIDERS.Transak]: MOONPAY_FEE_TYPES,
+  [ONRAMP_PROVIDERS.Transak]: DEFAULT_FEE_TYPES,
+  [ONRAMP_PROVIDERS.Topper]: DEFAULT_FEE_TYPES,
 }
 
 export const getNetworkDisplay = (chainId: number | undefined): string => {
@@ -78,12 +81,17 @@ export const chainIdToTransakNetworkId: { [id: number]: string } = {
   [OnRampChainId.BSC]: 'bsc',
 }
 
+export const chainIdToTopperNetworkId: { [id: number]: string } = {
+  0: 'bitcoin',
+}
+
 export const combinedNetworkIdMap: {
   [provider in keyof typeof ONRAMP_PROVIDERS]: { [id: number]: string }
 } = {
   [ONRAMP_PROVIDERS.MoonPay]: chainIdToMoonPayNetworkId,
   [ONRAMP_PROVIDERS.Mercuryo]: chainIdToMercuryoNetworkId,
   [ONRAMP_PROVIDERS.Transak]: chainIdToTransakNetworkId,
+  [ONRAMP_PROVIDERS.Topper]: chainIdToTopperNetworkId,
 }
 
 export const selectCurrencyField = (unit: OnRampUnit, mode: string) => {

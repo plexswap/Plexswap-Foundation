@@ -17,8 +17,8 @@ export const FARMS_API = 'https://farms-api.plexfinance.us'
 // LOOKUP //
 export const QUOTING_API_PREFIX = `${process.env.NEXT_PUBLIC_QUOTING_API}/order-price`
 export const QUOTING_API = `${QUOTING_API_PREFIX}/get-price`
-export const ACCESS_RISK_API = process.env.NEXT_ACCESS_RISK_API
-export const ONRAMP_API_BASE_URL = process.env.NEXT_ONRAMP_API_BASE_URL
+export const ACCESS_RISK_API = process.env.NEXT_PUBLIC_ACCESS_RISK_API
+export const ONRAMP_API_BASE_URL = process.env.NEXT_PUBLIC_ONRAMP_API_BASE_URL
 // ------------------------------  //
 export const TRANSAK_API_BASE_URL = 'https://api-stg.transak.com/api/v1'
 export const MOONPAY_BASE_URL = 'https://api.moonpay.com'
