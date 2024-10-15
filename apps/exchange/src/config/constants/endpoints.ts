@@ -19,22 +19,8 @@ export const QUOTING_API_PREFIX = `${process.env.NEXT_PUBLIC_QUOTING_API}/order-
 export const QUOTING_API = `${QUOTING_API_PREFIX}/get-price`
 export const ACCESS_RISK_API = process.env.NEXT_PUBLIC_ACCESS_RISK_API
 export const ONRAMP_API_BASE_URL = process.env.NEXT_PUBLIC_ONRAMP_API_BASE_URL
-// ------------------------------  //
-export const TRANSAK_API_BASE_URL = 'https://api-stg.transak.com/api/v1'
-export const MOONPAY_BASE_URL = 'https://api.moonpay.com'
 export const CELER_API = 'https://api.celerscan.com/scan'
-export const MERCURYO_WIDGET_ID = process.env.NEXT_PUBLIC_MERCURYO_WIDGET_ID
-export const MOONPAY_API_KEY = process.env.NEXT_PUBLIC_MOONPAY_LIVE_KEY 
-export const TRANSAK_API_KEY = process.env.NEXT_PUBLIC_TRANSAK_LIVE_KEY
-
-export const MERCURYO_WIDGET_URL =
-  process.env.NODE_ENV === 'development'
-    ? 'https://sandbox-widget.mrcr.io/embed.2.0.js'
-    : 'https://widget.mercuryo.io/embed.2.0.js'
-
-export const INFO_CLIENT_WITH_CHAIN = {
-      [ChainId.BSC]: 'https://proxy-api.plexfinance.us/bsc-exchange',
-}
+export const INFO_CLIENT_WITH_CHAIN = { [ChainId.BSC]: 'https://proxy-api.plexfinance.us/bsc-exchange'}
     
 export const CORE_SUBGRAPH_URLS = {
   ...CORE_SUBGRAPHS,
