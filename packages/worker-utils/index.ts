@@ -1,7 +1,5 @@
 export const CORS_ALLOW = [
-  /\.plexfinance\.run$/,
   /\.plexfinance\.us$/,
-  'https://swap.plexfinance.us',
   /^http:\/\/localhost(:\d+)?$/,
 ]
 

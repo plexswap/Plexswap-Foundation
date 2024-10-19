@@ -41,7 +41,7 @@ export const useOnRampQuotes = <selectData = GetOnRampQuoteReturnType>(
         onRampUnit,
       },
     ]),
-    refetchInterval: 40 * 1_000,
+    refetchInterval: 30 * 60 * 1_000,    // Refresh in each 30 minutes
     staleTime: 40 * 1_000,
     enabled: Boolean(enabled),
     queryFn: async ({ queryKey }) => {
@@ -69,7 +69,6 @@ export const useOnRampQuotes = <selectData = GetOnRampQuoteReturnType>(
 
 async function fetchProviderQuotes(payload: OnRampQuotesPayload): Promise<OnRampProviderQuote[]> {
   const response = await fetch(
-    // TO UPDATE
     `${ONRAMP_API_BASE_URL}/fetch-provider-quotes`,
     {
       headers: {
@@ -85,7 +84,7 @@ async function fetchProviderQuotes(payload: OnRampQuotesPayload): Promise<OnRamp
 }
 
 export async function fetchProviderAvailabilities(): Promise<{ [provider in keyof typeof ONRAMP_PROVIDERS]: boolean }> {
-  // Fetch data from endpoint 1
+
   const response = await fetch(`${ONRAMP_API_BASE_URL}/fetch-provider-availability`, {
     headers: {
       Accept: 'application/json',

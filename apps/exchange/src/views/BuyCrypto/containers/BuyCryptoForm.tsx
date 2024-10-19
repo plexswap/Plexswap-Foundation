@@ -1,6 +1,6 @@
 import { useDebounce } from '@plexswap/hooks'
 import { useTranslation } from '@plexswap/localization'
-import { AutoColumn, AutoRow, Box, Flex, Link, Row, Text, useMatchBreakpoints } from '@plexswap/ui-plex'
+import { AutoColumn, AutoRow, Box, Button, Flex, Link, Row, Text, useMatchBreakpoints } from '@plexswap/ui-plex'
 import { SwapWidget as SwapUI } from '@plexswap/widgets-internal'
 import { FiatOnRampModalButton } from 'components/FiatOnRampModal/FiatOnRampModal'
 import {
@@ -209,19 +209,16 @@ export function BuyCryptoForm() {
           />
           <Flex alignItems="center" justifyContent="center">
             <Text color="textSubtle" fontSize="14px" px="4px" textAlign="center">
-              {t('By continuing you agree to our')}{' '}
+              {t('Before you dive in, give the quotes a')}{' '}
             </Text>
-            <Link
+            <Text
               color={theme.colors.primary}
-              style={{ color: `${theme.colors.primary}` }}
-              display="flex"
+              style={{ cursor: 'pointer' }}
               fontSize="14px"
-              href="https://docs.plexfinance.us/terms-of-service"
-              referrerPolicy="no-referrer"
-              target="_blank"
+              onClick={() => refetch()} 
             >
-              {t('terms of service')}
-            </Link>
+              {t('quick refresh!')}
+            </Text>
           </Flex>
         </Box>
       </FormContainer>

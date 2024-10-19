@@ -8,7 +8,7 @@
     "downlevelIteration": true,
     "sourceMap": true,
     "target": "ES2020",
-    "types": ["vitest/globals"],
+    "types": ["vitest/globals", "node"],
     "paths": {
       "*": ["./src/*"],
       "@plexswap/ui-plex": ["../../packages/ui-plex/src/index.ts"],

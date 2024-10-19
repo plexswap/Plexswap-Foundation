@@ -18,7 +18,7 @@ export const FARMS_API = 'https://farms-api.plexfinance.us'
 export const QUOTING_API_PREFIX = `${process.env.NEXT_PUBLIC_QUOTING_API}/order-price`
 export const QUOTING_API = `${QUOTING_API_PREFIX}/get-price`
 export const ACCESS_RISK_API = process.env.NEXT_PUBLIC_ACCESS_RISK_API
-export const ONRAMP_API_BASE_URL = process.env.NEXT_PUBLIC_ONRAMP_API_BASE_URL
+export const ONRAMP_API_BASE_URL = process.env.NEXT_PUBLIC_ONRAMP_API_BASE_URL 
 export const CELER_API = 'https://api.celerscan.com/scan'
 export const INFO_CLIENT_WITH_CHAIN = { [ChainId.BSC]: 'https://proxy-api.plexfinance.us/bsc-exchange'}
     

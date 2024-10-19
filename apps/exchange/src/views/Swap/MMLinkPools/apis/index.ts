@@ -44,6 +44,7 @@ export const sendRFQAndGetRFQId = async (param: QuoteRequest): Promise<RFQIdResp
 }
 
 export const getRFQById = async (id: string | number) => {
+
   const response = await fetch(`${API_ENDPOINT}/rfq/${id}`, {
     method: 'GET',
     headers: {
