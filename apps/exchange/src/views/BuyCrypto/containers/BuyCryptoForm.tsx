@@ -209,7 +209,7 @@ export function BuyCryptoForm() {
           />
           <Flex alignItems="center" justifyContent="center">
             <Text color="textSubtle" fontSize="14px" px="4px" textAlign="center">
-              {t('Before you dive in, give the quotes a')}{' '}
+              {t('Before you dive in,')}{' '}
             </Text>
             <Text
               color={theme.colors.primary}
@@ -217,7 +217,7 @@ export function BuyCryptoForm() {
               fontSize="14px"
               onClick={() => refetch()} 
             >
-              {t('quick refresh!')}
+              {t('refresh the quotes!')}
             </Text>
           </Flex>
         </Box>
