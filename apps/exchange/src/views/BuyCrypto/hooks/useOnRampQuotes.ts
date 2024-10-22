@@ -1,6 +1,8 @@
 import { useQuery, type UseQueryResult } from '@tanstack/react-query'
 import { ONRAMP_API_BASE_URL } from 'config/constants/endpoints'
+import { VERY_SLOW_INTERVAL } from 'config/constants/index'
 import { getNetworkDisplay, type ONRAMP_PROVIDERS } from '../constants'
+
 import {
   createQueryKey,
   type Evaluate,
@@ -41,7 +43,7 @@ export const useOnRampQuotes = <selectData = GetOnRampQuoteReturnType>(
         onRampUnit,
       },
     ]),
-    refetchInterval: 30 * 60 * 1_000,    // Refresh in each 30 minutes
+    refetchInterval: VERY_SLOW_INTERVAL,    // Refresh in each 30 minutes
     staleTime: 40 * 1_000,
     enabled: Boolean(enabled),
     queryFn: async ({ queryKey }) => {

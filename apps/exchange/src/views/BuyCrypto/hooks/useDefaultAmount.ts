@@ -1,7 +1,9 @@
 import { useQuery, type QueryFunction } from '@tanstack/react-query'
 import { PRICE_API } from '@plexswap/trade-sentinels/Valorus' 
 import { useCallback, useMemo } from 'react'
+import { VERY_SLOW_INTERVAL } from 'config/constants/index'
 import { createQueryKey } from '../types'
+
 
 const getFiatUsdRateQueryKey = createQueryKey<'fia-usd-rate', [currencyCode: string]>('fia-usd-rate')
 type GetFiatUsdRateKey = ReturnType<typeof getFiatUsdRateQueryKey>
@@ -23,11 +25,11 @@ export function useFiatUsdRate({ currencyCode = 'USD' }: { currencyCode: string 
 
   return useQuery({
     gcTime: Number.POSITIVE_INFINITY,
-    staleTime: 1000 * 60 * 60 * 1, // 1 hour
+    staleTime: VERY_SLOW_INTERVAL * 2, // 1 hour
     meta: { presist: true as const },
     enabled: currencyCode !== 'USD',
     queryKey,
-    refetchInterval: 10_000,
+    refetchInterval: VERY_SLOW_INTERVAL,
     refetchIntervalInBackground: false,
     queryFn: getFiatPrice,
   })

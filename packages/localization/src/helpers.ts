@@ -1,6 +1,6 @@
 import { EN } from './config/languages'
 
-const publicUrl = process.env.PUBLIC_URL || ''
+const publicUrl = 'https://assets.plexfinance.us'
 
 export const LS_KEY = 'plexswap_language'
 

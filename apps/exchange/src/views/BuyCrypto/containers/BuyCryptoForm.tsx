@@ -1,6 +1,6 @@
 import { useDebounce } from '@plexswap/hooks'
 import { useTranslation } from '@plexswap/localization'
-import { AutoColumn, AutoRow, Box, Button, Flex, Link, Row, Text, useMatchBreakpoints } from '@plexswap/ui-plex'
+import { AutoColumn, AutoRow, Box, Flex, Link, Row, Text, useMatchBreakpoints } from '@plexswap/ui-plex'
 import { SwapWidget as SwapUI } from '@plexswap/widgets-internal'
 import { FiatOnRampModalButton } from 'components/FiatOnRampModal/FiatOnRampModal'
 import {
@@ -194,7 +194,21 @@ export function BuyCryptoForm() {
           inputError={inputError}
           quotesError={quotesError}
         />
-
+        <Flex alignItems="center" justifyContent="center">
+          <Text
+            bold
+            as="span"
+            fontSize="15px"
+            color="primary"
+            style={{ cursor: 'pointer' }}
+            onClick={() => refetch()} 
+          >
+            {t('Refresh the quotes')}
+          </Text>
+          <Text as="span" pl="4px" color="textSubtle" fontSize="15px">
+            {t('before proceeding.')}
+          </Text>
+        </Flex>
         <Box>
           <FiatOnRampModalButton
             externalTxIdRef={externalTxIdRef}
@@ -207,17 +221,27 @@ export function BuyCryptoForm() {
             errorText={amountError}
             onRampUnit={unit}
           />
+          
           <Flex alignItems="center" justifyContent="center">
             <Text color="textSubtle" fontSize="14px" px="4px" textAlign="center">
-              {t('Before you dive in,')}{' '}
+              {t('By continuing you agree to our')}
             </Text>
             <Text
-              color={theme.colors.primary}
+              bold
+              as="span"
+              fontSize="15px"
+              color="primary"
               style={{ cursor: 'pointer' }}
-              fontSize="14px"
-              onClick={() => refetch()} 
+              onClick={(e) => {
+                e.preventDefault(); // Prevent default link behavior
+                window.open(
+                  "https://legal-docs.plexfinance.us/terms-of-service/",
+                  "TermsOfServicePopup",
+                  "width=600,height=600,resizable,scrollbars"
+                );
+              }}
             >
-              {t('refresh the quotes!')}
+              {t('terms of service')}
             </Text>
           </Flex>
         </Box>
