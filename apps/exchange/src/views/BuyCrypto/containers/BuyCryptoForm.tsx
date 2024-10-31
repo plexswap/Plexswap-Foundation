@@ -51,7 +51,7 @@ type InputEvent = ChangeEvent<HTMLInputElement>
 export function BuyCryptoForm() {
   const { typedValue, independentField } = useBuyCryptoState()
 
-  const { t } = useTranslation()
+  const { t, currentLanguage } = useTranslation()
   const isBtc = useIsBtc()
   const theme = useTheme()
 
@@ -234,8 +234,14 @@ export function BuyCryptoForm() {
               style={{ cursor: 'pointer' }}
               onClick={(e) => {
                 e.preventDefault(); // Prevent default link behavior
+                let termsUrl;
+                if (currentLanguage.locale === 'pt-BR') {
+                  termsUrl = "https://legal-docs.plexfinance.us/termos-de-servico/";
+                } else {
+                  termsUrl = "https://legal-docs.plexfinance.us/terms-of-service/";
+                }
                 window.open(
-                  "https://legal-docs.plexfinance.us/terms-of-service/",
+                  termsUrl,
                   "TermsOfServicePopup",
                   "width=600,height=600,resizable,scrollbars"
                 );

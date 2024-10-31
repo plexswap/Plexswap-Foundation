@@ -135,7 +135,7 @@ const CardContent: React.FC<{ variants?: 'farm' | 'pm' }> = ({ variants }) => {
           {t('Connect wallet to view booster')}
         </Text>
         <Text color="textSubtle" fontSize={12} mb="16px">
-          {t('An active veWAYA staking position is required for activating farm yield boosters.')}
+          {t('An active WAYA staking position is required for activating farm yield boosters.')}
         </Text>
         <ConnectWalletButton width="100%" style={{ backgroundColor: theme.colors.textSubtle }} />
       </Box>
@@ -147,7 +147,7 @@ const CardContent: React.FC<{ variants?: 'farm' | 'pm' }> = ({ variants }) => {
           {t('No WAYA locked')}
         </Text>
         <Text color="textSubtle" fontSize={12} mb="16px">
-          {t('An active veWAYA staking position is required for activating farm yield boosters.')}
+          {t('An active WAYA staking position is required for activating farm yield boosters.')}
         </Text>
         <NextLink href="/waya-staking" passHref>
           <Button width="100%" style={{ backgroundColor: theme.colors.textSubtle }}>

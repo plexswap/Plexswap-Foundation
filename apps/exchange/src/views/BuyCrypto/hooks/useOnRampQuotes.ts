@@ -44,7 +44,7 @@ export const useOnRampQuotes = <selectData = GetOnRampQuoteReturnType>(
       },
     ]),
     refetchInterval: VERY_SLOW_INTERVAL,    // Refresh in each 30 minutes
-    staleTime: 40 * 1_000,
+    staleTime: VERY_SLOW_INTERVAL * 2,      // 1 hour
     enabled: Boolean(enabled),
     queryFn: async ({ queryKey }) => {
       // eslint-disable-next-line @typescript-eslint/no-shadow

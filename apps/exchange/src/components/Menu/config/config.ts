@@ -107,6 +107,11 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         href: 'https://finance.symplexia.com/',
         type: DropdownMenuItemType.EXTERNAL_LINK,
       },
+      {
+        label: t('Plexchain Explorer'),
+        href: 'https://explorer.plexfinance.us/',
+        type: DropdownMenuItemType.EXTERNAL_LINK,
+      },
         ].map((item) => addMenuItemSupported(item, chainId)),
       },
     ].map((item) => addMenuItemSupported(item, chainId))

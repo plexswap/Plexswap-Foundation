@@ -92,12 +92,6 @@ const WayaDataRow = () => {
             address: wayaVaultAddress,
             functionName: 'totalLockedAmount',
           },
-          {
-            abi: erc20Abi,
-            address: bscTokens.waya.address,
-            functionName: 'balanceOf',
-            args: [addresses.voter[ChainId.BSC]],
-          },
         ],
         allowFailure: false,
       })

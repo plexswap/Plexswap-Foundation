@@ -386,7 +386,6 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
                 {t('Stake LP tokens to earn.')}
               </FarmH2>
             </Box>
-            <Box>{wayaSupportedChainId.includes(chainId) && <FarmBoosterCard />}</Box>
           </FarmFlexWrapper>
         </Flex>
       </PageHeader>

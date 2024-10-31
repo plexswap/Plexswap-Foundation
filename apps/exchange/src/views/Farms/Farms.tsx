@@ -334,11 +334,6 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
                 {t('Stake LP tokens to earn.')}
               </FarmH2>
             </Box>
-            {(chainId === ChainId.BSC || chainId === ChainId.PLEXCHAIN ) && (
-              <Box>
-                <FarmBoosterCard />
-              </Box>
-            )}
           </FarmFlexWrapper>
         </Flex>
       </PageHeader>
